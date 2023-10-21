@@ -1,3 +1,23 @@
+:root{
+    --color-primaray: #ff5722;
+    --color-secondary-light: #fff6f2;
+    --color-secondary-dark: #ffa589;
+    --color-navbar-: #f8f8f8;
+    --color-headings: #000;
+    --color-body: #333333; 
+    --color-white: #fff; 
+}
+
+body{
+    color: var(--color-body); 
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-headings); 
+}
+
 .btn{
     cursor: pointer;
     outline: 0;
@@ -11,7 +31,7 @@
 }
 
 .btn--primary{
-    background-color: var(--color-primary);
+    background-color: var(--color-primaray);
     color: var(--color-white); 
 }
 
