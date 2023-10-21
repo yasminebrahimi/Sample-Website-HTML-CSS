@@ -45,3 +45,20 @@ h3 {
 .btn-block{
     width: 100%;
 }
+
+
+.badge{
+   display: inline-block;
+   padding: 0.5rem 1rem;
+   background-color: #fff;
+   border-radius: 32px;
+   border: 2px solid var(--color-primaray);
+   color: var(--color-primaray);
+   text-transform: uppercase;
+   
+}
+
+.badge-primary{
+    background-color: var(--color-primaray);
+    color: var(--color-white);
+}
