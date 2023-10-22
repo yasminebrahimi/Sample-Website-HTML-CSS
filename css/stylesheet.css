@@ -62,3 +62,33 @@ h3 {
     background-color: var(--color-primaray);
     color: var(--color-white);
 }
+
+
+.list{
+    list-style: none;
+    font-size: 1.6rem; 
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+/* .list--tick .list-item ::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(/assets/images/arrow.png);
+    padding-left: 3rem;
+}  */
+
+.list--tick .list__item{
+    background: url(/assets/images/arrow.png) no-repeat left center; 
+    background-position: center left;
+    padding-left: rem;
+}
+
+.list--tick .list__item{
+    background-color: #ff5722;
+    margin-bottom: 20px;
+} 
