@@ -92,3 +92,24 @@ h3 {
     background-color: #ff5722;
     margin-bottom: 20px;
 } 
+
+.block-plan{
+    display: grid;
+    gap: 2rem 3rem;
+
+}
+
+.plan{
+    background-color: #ccc;
+}
+
+.card{
+    border-radius: 20px;
+    background-color: violet;
+}
+
+@media screen and (min-width: 1024px){
+    .block-plan{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
