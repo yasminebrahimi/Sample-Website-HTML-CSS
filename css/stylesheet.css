@@ -105,9 +105,20 @@ h3 {
 
 .card{
     border-radius: 20px;
-    background-color: violet;
+    background-color: #ccc;
+    overflow: hidden;
+    box-shadow: 0 0 20px 10px #efefef;
 }
 
+.card-header, 
+.card-body{
+    padding: 3rem 2.5rem;
+
+}
+
+.card-header{
+    background-color: var(--color-primaray);
+}
 @media screen and (min-width: 1024px){
     .block-plan{
         grid-template-columns: repeat(3, 1fr); 
