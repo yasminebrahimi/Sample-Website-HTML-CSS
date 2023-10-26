@@ -1,5 +1,6 @@
 :root{
     --color-primaray: #ff5722;
+    --color-primary-light: #ff7a50; 
     --color-secondary-light: #fff6f2;
     --color-secondary-dark: #ffa589;
     --color-navbar-: #f8f8f8;
@@ -58,7 +59,7 @@ h3 {
    
 }
 
-.badge-primary{
+.badge--primary{
     background-color: var(--color-primaray);
     color: var(--color-white);
 }
@@ -114,12 +115,16 @@ h3 {
 }
 
 .card__header{
-    background-color: var(--color-secondary-dark);
+    /* background-color: var(--color-secondary-dark); */
     color: var(--color-white);
 }
 
-.crd--primary .card__header{
-    background-color: var(--color-primaray);
+.card--secondary .card__header{
+    background-color: var(--color-secondary-dark);
+}
+
+.card--primary .card__header{
+    background-color: var(--color-primary-light);
 }
 
 .plan__introduction{
