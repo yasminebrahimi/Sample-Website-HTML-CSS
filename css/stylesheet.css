@@ -97,11 +97,13 @@ h3 {
 .block-plan{
     display: grid;
     gap: 2rem 3rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .plan{
-    max-width: 500px;
+    max-width: 450px;
+    font-size: 1.8rem;
+    transition: all 0.2s ease-out;
 }
 
 .card{
@@ -146,11 +148,30 @@ h3 {
     margin-top: 1rem;
 }
 
+.plan .btn-block{
+    font-size: 1.4rem;
+    margin-top: 10rem;
+}
 
+.plan-popular{
+    transform: scale(1.1);
+}
+
+.plan-popular:hover{
+    transform: scale(1.15);
+}
+
+
+.plan:hover{
+    transform: scale(1.05);
+}
 
 @media screen and (min-width: 1024px){
     .block-plan {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .plan .btn-block{
+        font-size: 1.8rem;
     }
 }
 
