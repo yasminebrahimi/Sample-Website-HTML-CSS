@@ -96,7 +96,9 @@ h3 {
 
 .block-plan{
     display: grid;
-    gap: 2rem 3rem;
+    gap: 10rem 4rem;
+    justify-content: center; 
+    grid-template-columns:repeat(auto-fit,minmax(250px,350px));
     margin-top: 5rem;
 }
 
@@ -173,5 +175,10 @@ h3 {
     .plan .btn-block{
         font-size: 1.8rem;
     }
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
