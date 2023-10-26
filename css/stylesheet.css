@@ -93,7 +93,7 @@ h3 {
     margin-bottom: 20px;
 } 
 
-.block-plan{
+/* .block-plan{
     display: grid;
     gap: 2rem 3rem;
 
@@ -123,5 +123,37 @@ h3 {
     .block-plan{
         grid-template-columns: repeat(3, 1fr); 
     }
+} */
+
+
+.block-plan{
+    display: grid;
+    gap: 2rem 3rem;
+    margin-top: 2rem;
 }
 
+.plan{
+    max-width: 500px;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 10px #efefef;
+}
+
+.card__header, .card__body{
+    padding: 3rem 2.5rem;
+}
+
+.card__header{
+    background-color: var(--color-secondary-dark);
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .block-plan {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
