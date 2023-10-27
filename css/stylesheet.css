@@ -168,17 +168,40 @@ h3 {
     transform: scale(1.05);
 }
 
+
 @media screen and (min-width: 1024px){
     .block-plan {
         grid-template-columns: repeat(3, 1fr);
     }
+        .feature{
+            grid-template-columns: repeat(2,1fr);
+        }   
+    }
+
+
     .plan .btn-block{
         font-size: 1.8rem;
     }
-}
+
 
 .container{
     max-width: 1140px;
     margin: 0 auto;
 }
 
+.feature{
+    display: grid;
+}
+
+.feature .btn{
+    padding: 1.2rem 3rem;
+}
+
+.feature__text{
+    margin-bottom: 3rem;
+}
+
+.feature__image{
+    width: 100%; 
+    height: auto;
+}
