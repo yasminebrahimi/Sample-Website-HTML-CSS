@@ -11,6 +11,8 @@
 
 body{
     color: var(--color-body); 
+    font-size: 1.4rem;
+    line-height: 1.6;
 }
 
 h1,
@@ -198,10 +200,14 @@ h3 {
 }
 
 .feature__text{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature__image >img {
+    width: 100%; 
+    height: auto;
 }
 
 .feature__image{
-    width: 100%; 
-    height: auto;
+    margin-bottom: 2rem;
 }
