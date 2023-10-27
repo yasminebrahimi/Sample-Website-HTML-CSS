@@ -186,6 +186,10 @@ h3 {
             order: 1;
         }
 
+        ..feature__image >img {
+            width: 100%; 
+        }
+
     
     }
 
