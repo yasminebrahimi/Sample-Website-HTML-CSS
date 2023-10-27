@@ -177,7 +177,16 @@ h3 {
     }
         .feature{
             grid-template-columns: repeat(2,1fr);
-        }   
+        } 
+        .feature__image{
+            order: 2;
+            margin-bottom: 0;
+        }  
+        .feature__detail{
+            order: 1;
+        }
+
+    
     }
 
 
@@ -204,10 +213,12 @@ h3 {
 }
 
 .feature__image >img {
-    width: 100%; 
+    width: 70%; 
     height: auto;
 }
 
 .feature__image{
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
