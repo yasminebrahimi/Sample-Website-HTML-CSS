@@ -226,3 +226,31 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
+.contact-us{
+    display: grid;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contact-us{
+        grid-template-areas: 
+        "form address"
+        "from map"
+        "from icons"
+        ;
+    }
+    .contact-us__form{
+        grid-area: from;
+    }
+    .contact-us__map{
+        grid-area: map;
+    }
+    .contact-us__address{
+        grid-area: address;
+    }
+    .contact-us__icons{
+        grid-area: icons;
+    }
+
+}
