@@ -231,20 +231,25 @@ h3 {
     display: grid;
 }
 
+.contact-us__map{
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
     .contact-us{
         grid-template-areas: 
-        "form address"
+        "from address"
         "from map"
         "from icons"
         ;
+        grid-template-columns: 30fr 70fr;
     }
     .contact-us__form{
         grid-area: from;
     }
     .contact-us__map{
         grid-area: map;
+        display: block;
     }
     .contact-us__address{
         grid-area: address;
