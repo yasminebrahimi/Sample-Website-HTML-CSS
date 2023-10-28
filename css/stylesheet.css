@@ -287,10 +287,25 @@ h3 {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
-
 }
 
 .icon-holder__label{
     margin-right: 2rem;
     display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-us__icons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact-us__icons .icon-holder{
+        flex-direction: column;
+    }
+    .icon-holder__label{
+        order: 2;
+        font-size: 1.4rem;
+        margin-top: 1rem; 
+    }
+    
 }
