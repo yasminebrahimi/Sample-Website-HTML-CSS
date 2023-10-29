@@ -261,13 +261,13 @@ h3 {
 }
 
 .icon{
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
 }
 
 .icon-container{
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,12 +292,14 @@ h3 {
 .icon-holder__label{
     margin-right: 2rem;
     display: block;
+    max-width: 240px;
 }
 
 @media screen and (min-width: 1024px) {
     .contact-us__icons{
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-end;
     }
     .contact-us__icons .icon-holder{
         flex-direction: column;
@@ -306,6 +308,27 @@ h3 {
         order: 2;
         font-size: 1.4rem;
         margin-top: 1rem; 
+    }
+    
+}
+
+.contact-us__social .icon-container{
+    margin-left: ;
+}
+
+.contact-us__social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-us__social{
+        justify-content: flex-start;
+    }
+    .contact-us__social .icon-container{
+        margin-left: 2rem;
     }
     
 }
