@@ -321,11 +321,13 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
     .contact-us__social{
         justify-content: flex-start;
+        margin-bottom: 0;
     }
     .contact-us__social .icon-container{
         margin-left: 2rem;
@@ -337,6 +339,8 @@ h3 {
     width: 100%;
     height: auto;
 }
+
+
 
 .form-wrapper{
     height: 100%;
@@ -390,5 +394,15 @@ textarea{
 
 .form-wrapper textarea{
     border-radius: 5px;
+}
+
+.contact-us__form{
+    margin-right: 0rem;
+}
+
+@media screen and (min-width:1024px){
+    .contact-us__form{
+        margin-right: 3rem;
+    }
 }
 
