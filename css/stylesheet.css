@@ -383,8 +383,8 @@ textarea{
     padding: 1rem 1.5rem;
 }
 
-.form-wrapper input :focus, 
-.form-wrapper textarea :focus{
+.form-wrapper input:focus, 
+.form-wrapper textarea:focus {
     border: 1px solid var(--color-primaray);
 }
 
