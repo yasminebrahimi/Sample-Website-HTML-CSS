@@ -358,13 +358,22 @@ h3 {
     height: 80%;
 }
 
-input{
+input, 
+textarea{
     display: block;
     outline: 0;
     border: 0;
 }
 
-.form-wrapper input{
+textarea{
+    resize: none;
+}
+
+.form-wrapper input, 
+.form-wrapper textarea {
     border-radius: 39px;
     background-color: #f5f5f5f5;
+    border: 1px solid #ccc;
+    padding: 1rem 1.5rem;
 }
+
