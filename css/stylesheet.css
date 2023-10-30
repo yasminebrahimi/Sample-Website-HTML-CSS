@@ -369,11 +369,26 @@ textarea{
     resize: none;
 }
 
+::placeholder{
+    font-size: 1.1rem;
+    color: #444;
+
+}
+
 .form-wrapper input, 
 .form-wrapper textarea {
     border-radius: 39px;
     background-color: #f5f5f5f5;
     border: 1px solid #ccc;
     padding: 1rem 1.5rem;
+}
+
+.form-wrapper input :focus, 
+.form-wrapper textarea :focus{
+    border: 1px solid var(--color-primaray);
+}
+
+.form-wrapper textarea{
+    border-radius: 5px;
 }
 
