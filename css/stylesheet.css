@@ -418,6 +418,11 @@ textarea{
     flex-direction: column;
 }
 
+.footer__item{
+    margin-bottom: 2.5rem;
+}
+
+
 .footer__item a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -429,5 +434,6 @@ textarea{
 .footer__item h6{
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0rem;
 }
