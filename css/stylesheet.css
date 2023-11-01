@@ -480,6 +480,7 @@ textarea{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem 2rem;
 }
 
 .nav__list{
@@ -497,4 +498,21 @@ textarea{
     text-decoration: none;
     color: #444;
     display: block;
+}
+
+
+.nav__toggler{
+    background-color: gold;
+}
+
+@media screen and (min-width: 768) {
+    .nav__toggler{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+    
 }
