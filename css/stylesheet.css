@@ -493,13 +493,18 @@ textarea{
 .nav__item{
     margin-bottom: 1rem;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 1rem;
 }
 
 .nav__item > a {
     text-decoration: none;
     color: #444;
     display: block;
+    padding: 0.5rem;
+}
+
+.nav__item > a:hover{
+    color: var(--color-primaray);
+    background-color: orange;
 }
 
 
@@ -519,7 +524,6 @@ textarea{
     .nav__item{
         margin-left: 2rem;
         font-size: 1.6rem;
+        border: 0;
     }
-    
-
 }
