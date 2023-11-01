@@ -492,6 +492,8 @@ textarea{
 
 .nav__item{
     margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
 }
 
 .nav__item > a {
@@ -514,5 +516,10 @@ textarea{
         align-items: center;
         width: auto;
     }
+    .nav__item{
+        margin-left: 2rem;
+        font-size: 1.6rem;
+    }
     
+
 }
