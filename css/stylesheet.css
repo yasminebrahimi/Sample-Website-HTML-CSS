@@ -484,5 +484,17 @@ textarea{
 
 .nav__list{
     width: 100%;
+    display: flex; 
+    flex-direction: column;
+    font-size: 1.4rem;
+}
 
+.nav__item{
+    margin-bottom: 1rem;
+}
+
+.nav__item > a {
+    text-decoration: none;
+    color: #444;
+    display: block;
 }
