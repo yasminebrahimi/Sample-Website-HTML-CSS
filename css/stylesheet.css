@@ -469,3 +469,20 @@ textarea{
         margin-left: 1.5rem;
     }
 }
+
+
+.main-header{
+    background-color: var(--color-navbar-);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__list{
+    width: 100%;
+
+}
