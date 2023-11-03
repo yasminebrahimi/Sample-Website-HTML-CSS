@@ -512,7 +512,23 @@ textarea{
     background-color: gold;
 }
 
+.nav__item.cta{
+    font-size: 1.4rem;
+
+}
+
+.nav__item.cta  a {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.nav__item .btn{
+    padding: 1rem 3rem; 
+}
 @media screen and (min-width: 768) {
+    .nav{
+        padding: 0rem 2rem; 
+    }
     .nav__toggler{
         display: none;
     }
@@ -522,7 +538,8 @@ textarea{
         width: auto;
     }
     .nav__item{
-        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 0;
         font-size: 1.6rem;
         border: 0;
     }
