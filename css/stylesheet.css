@@ -488,6 +488,15 @@ textarea{
     display: flex; 
     flex-direction: column;
     font-size: 1.4rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.nav .nav__expanded .nav__list{
+    max-height: 100vh;
+    opacity: 1;
 }
 
 .nav__item{
@@ -514,6 +523,7 @@ textarea{
 
 .nav__item.cta {
     font-size: 1.4rem;
+    border: 0;
 
 }
 
@@ -525,6 +535,12 @@ textarea{
 .nav__item .btn{
     padding: 1rem 3rem; 
 }
+
+
+
+
+
+
 @media screen and (min-width: 768) {
     .nav{
         padding: 0rem 2rem; 
@@ -536,6 +552,8 @@ textarea{
         flex-direction: row;
         align-items: center;
         width: auto;
+        opacity: 1;
+        max-height: 100%;
     }
     .nav__item{
         margin-right: 2rem;
