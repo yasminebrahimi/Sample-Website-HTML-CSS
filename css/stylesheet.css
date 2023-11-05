@@ -518,7 +518,7 @@ textarea{
 
 
 .nav__toggler {
-    background-color: gold;
+    /* background-color: gold; */
 }
 
 .nav__item.cta {
@@ -535,10 +535,6 @@ textarea{
 .nav__item .btn{
     padding: 1rem 3rem; 
 }
-
-
-
-
 
 
 @media screen and (min-width: 768) {
@@ -561,4 +557,32 @@ textarea{
         font-size: 1.6rem;
         border: 0;
     }
+}
+
+
+.nav__toggler{
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    border-radius: 5px; 
+    transition: all 0.4s ease-out;
+}
+
+.nav .nav__expanded .bar-one{
+    transform: rotate(-45deg) translate(-9px, 6px, );
+    margin: 8px 0;
+}
+
+.nav .nav__expanded .bar-two{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.nav .nav__expanded .bar-three{
+    transform: rotate(45deg) translate(-8px, -7px);
+    margin: 8px 0;
 }
