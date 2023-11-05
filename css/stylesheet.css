@@ -508,16 +508,16 @@ textarea{
 }
 
 
-.nav__toggler{
+.nav__toggler {
     background-color: gold;
 }
 
-.nav__item.cta{
+.nav__item.cta {
     font-size: 1.4rem;
 
 }
 
-.nav__item.cta  a {
+.nav__item.cta > a {
     color: #fff;
     font-size: 1.4rem;
 }
