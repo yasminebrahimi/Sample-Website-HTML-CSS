@@ -653,6 +653,16 @@ textarea{
     flex-wrap: wrap;
 }
 
+.intro-btn__passenger{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro-btn__passenger p{
+    font-size: 1.4rem;
+}
+
 @media screen and (min-width: 768px) {
     .hero-wrapper{
         justify-content: flex-start;
@@ -664,7 +674,20 @@ textarea{
     }
     .intro-btn{
         width: 530px;
+        padding: 25px;
+        border-radius: 20px;
+    }
 
+    .intro-btn h1{
+        font-size: 5rem;
+    }
+
+    .intro-btn h2{
+        font-size: 2.5rem;
+    }
+
+    .intro-btn__passenger p{
+        font-size: 1.6rem;
     }
 }
 
