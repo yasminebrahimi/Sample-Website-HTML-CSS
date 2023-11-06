@@ -645,6 +645,26 @@ textarea{
     border-radius: 12px;
     margin-bottom: 2rem;
     padding: 14px;
+}
 
+.intro-wrappe{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-wrapper{
+        justify-content: flex-start;
+    }
+    .intro-wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .intro-btn{
+        width: 530px;
+
+    }
 }
 
