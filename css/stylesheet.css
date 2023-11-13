@@ -736,6 +736,16 @@ textarea{
     margin-bottom: 20px;
 }
 
+.services .feature__title{
+    margin: 1.5rem 0;
+
+}
+
+.services .feature__image{
+    display: none;
+}
+
+
 @media screen and (min-width:1024px){
     .services__taps .tap > p{
         margin-top: 1.1rem;
@@ -748,4 +758,8 @@ textarea{
         font-size: 3.5rem;
         margin-bottom: 30px;
     }
+    .services .feature__image{
+        display: block;
+    }
 }
+
