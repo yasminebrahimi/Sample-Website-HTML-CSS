@@ -708,6 +708,7 @@ textarea{
     flex-direction: column;
     align-items: center;
     max-width: 95px;
+    padding: 5px 0 15px;
 }
 
 .services__taps .tap  > p{
@@ -729,6 +730,12 @@ textarea{
     transition: all 0.3s ease-out;
 }
 
+.services__title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 @media screen and (min-width:1024px){
     .services__taps .tap > p{
         margin-top: 1.1rem;
@@ -737,5 +744,8 @@ textarea{
     .services__taps img {
         width: 100%;
     }
-    
+    .services__title{
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
 }
