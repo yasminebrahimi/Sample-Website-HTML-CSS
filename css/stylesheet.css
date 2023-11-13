@@ -691,3 +691,51 @@ textarea{
     }
 }
 
+
+.services__taps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    overflow: auto;
+}
+
+
+.services__taps a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95px;
+}
+
+.services__taps .tap  > p{
+    margin-top: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.services__taps img {
+    max-width: 100px;
+
+}
+
+.services__taps .tap{
+    opacity: 0.5;
+}
+
+.services__taps .tap:hover{
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+
+@media screen and (min-width:1024px){
+    .services__taps .tap > p{
+        margin-top: 1.1rem;
+        font-size: 1.4rem;
+    }
+    .services__taps img {
+        width: 100%;
+    }
+    
+}
