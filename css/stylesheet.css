@@ -177,6 +177,7 @@ h3 {
     }
         .feature{
             grid-template-columns: repeat(2,1fr);
+            gap: 0rem 10rem;
         } 
         .feature__image{
             order: 2;
@@ -186,7 +187,7 @@ h3 {
             order: 1;
         }
 
-        ..feature__image >img {
+        .feature__image >img {
             width: 100%; 
         }
 
@@ -206,6 +207,8 @@ h3 {
 
 .feature{
     display: grid;
+    padding: 2rem;
+    gap: 0rem 10rem; 
 }
 
 .feature .btn{
@@ -214,6 +217,7 @@ h3 {
 
 .feature__text{
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .feature__image >img {
@@ -786,5 +790,20 @@ textarea{
 
 .tab.active{
     opacity: 1;
+}
+
+.block{
+    padding: 4rem 2rem;
+}
+
+.block-heading{
+    margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .block{
+        padding: 6rem 2rem;
+    }
+    
 }
 
