@@ -496,7 +496,7 @@ textarea{
 .main-footer{
     background-color: #000;
     color: #fff;
-    min-height: 230px;
+    min-height: 250px;
     display: flex;
     align-items: center;
 }
@@ -509,8 +509,6 @@ textarea{
 .footer__item{
     margin-bottom: 2.5rem;
 }
-
-
 .footer__item a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -523,7 +521,7 @@ textarea{
 .footer__item h6{
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .footer__item .enemad{
