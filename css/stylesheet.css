@@ -1,7 +1,7 @@
-
+/* Rest */
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ html{
     font-size: 62.5%;
 }
 
-body{
+body {
     color: var(--color-body); 
     font-size: 1.4rem;
     line-height: 1.7;
@@ -33,7 +33,7 @@ body{
 
 html, 
 body,
-p{
+p {
     text-size-adjust: none !important;
     -webkit-text-size-adjust: none !important;
     -moz-text-size-adjust: none !important;
@@ -228,7 +228,7 @@ h2{
 }
 
 .plan .btn--block{
-    font-size: 10rem;
+    font-size: 2.5rem;
     margin-top: 1.6rem;
 }
 
@@ -249,39 +249,47 @@ h2{
     font-size: 1.4rem;
 }
 
-@media screen and (min-width: 1024px){
-    .plan .btn--block{
-        font-size: 1.8rem;
+@media screen and (min-width: 1024px) {
+    /* .block-plan {
+      grid-template-columns: repeat(3, 1fr);
+    } */
+    .plan .btn--block {
+      font-size: 1.8rem;
     }
-    }
+  }
 
 
+
+    /* container */
 .container{
     max-width: 1140px;
     margin: 0 auto;
 }
 
+/* FEATURE */
 .feature{
     display: grid;
+    justify-content: center;
     padding: 2rem;
     gap: 0rem 10rem; 
 }
 
-.feature .btn{
-    padding: 1.2rem 3rem;
-}
-
-.feature__text{
+.feature__text {
     margin-bottom: 2rem;
     text-align: justify;
 }
 
-.feature__image >img {
+.feature .btn {
+    padding: 1.2rem 3rem;
+}
+
+
+.feature__image > img {
     width: 100%; 
     height: auto;
 }
 
-.feature__image{
+.feature__image {
     width: 90%;
     justify-self: flex-end;
     margin-bottom: 2rem; 
@@ -307,8 +315,9 @@ h2{
     .feature__image > img {
         width: 100%; 
     }
+}
 
-
+/* Contact-us */
 .contact-us{
     display: grid;
     justify-content: center;
@@ -324,7 +333,7 @@ h2{
         grid-template-areas: 
         "address form"
         "map form"
-        "icons from"
+        "icons form"
         ;
         grid-template-columns: 70fr 30fr;
     }
@@ -343,6 +352,8 @@ h2{
     }
 }
 
+
+/* ICONS */
 .icon{
     width: 24px;
     height: 24px;
@@ -367,7 +378,7 @@ h2{
 .contact-us__icons{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     padding: 2rem;
@@ -389,7 +400,7 @@ h2{
     .contact-us__icons{
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: flex-start;
     }
     .contact-us__icons .icon-holder{
         margin-bottom: 0;
@@ -405,8 +416,9 @@ h2{
     
 }
 
+/* social icons  */
 .contact-us__social .icon-container{
-    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .contact-us__social{
@@ -421,7 +433,7 @@ h2{
 
 @media screen and (min-width: 1024px) {
     .contact-us__social{
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
     .contact-us__social .icon-container{
         margin-left: 2rem;
@@ -440,7 +452,7 @@ h2{
 .form-wrapper{
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     padding: 1rem;
 }
 
@@ -470,6 +482,7 @@ textarea{
 ::placeholder{
     font-size: 1.2rem;
     color: #333;
+    font-family: "iranyekan";
 }
 
 .form-wrapper input, 
@@ -477,6 +490,8 @@ textarea{
     border-radius: 39px;
     background-color: #f5f5f5f5;
     border: 1px solid #ccc;
+    padding: 1.2rem 1.5rem;
+    font-family: "iranyekan";
     margin-bottom: 1.5rem;
 }
 
@@ -516,13 +531,19 @@ textarea{
     transition: all 0.3s ease-out;
 }
 
+
+.footer__item a:hover{
+    color: var(--color-primaray);
+}
+
+
 .footer__item h6{
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.footer__item .enemad{
+.footer__item.enemad{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -592,7 +613,7 @@ textarea{
     text-decoration: none;
     color: #444;
     display: block;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     transition: all 0.4s ease-out;
 }
 
@@ -662,7 +683,7 @@ textarea{
 }
 
 .nav .nav__expanded .bar-three{
-    transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -8px);
     margin: 8px 0;
 }
 
@@ -672,7 +693,6 @@ textarea{
     position: relative;
     width: 100%;
     height: 478px;
-
 }
 
 .hero-section .banner-img{
@@ -740,8 +760,12 @@ textarea{
     justify-content: space-around;
 }
 
-.intro-btn__passenger p{
+.intro-btn__passenger p {
     font-size: 1.2rem;
+}
+
+.intro-btn__passenger > i {
+    color: #000;
 }
 
 .intro-btn__passenger.driver-intro {
@@ -758,36 +782,37 @@ textarea{
     width: 420px;
   }
 
-@media screen and (min-width: 768px) {
-    .hero-wrapper{
-        justify-content: flex-start;
-        right: 0;
+  @media screen and (min-width: 768px) {
+    .hero-wrapper {
+      justify-content: flex-start;
+      right: 0;
     }
-    .intro-wrapper{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .intro-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
-    .intro-btn{
-        width: 500px;
-        max-width: 500px;
-        padding: 0 25px;
-        border-radius: 20px;
+    .intro-btn {
+      width: 500px;
+      max-width: 500px;
+      padding: 0 25px;
+      border-radius: 20px;
     }
-    .intro-btn h1{
-        font-size: 5rem;
+    .intro-btn h1 {
+      font-size: 5rem;
     }
-    .intro-btn h2{
-        font-size: 2rem;
-        font-weight: 400;
+    .intro-btn h2 {
+      font-size: 2rem;
+      font-weight: 400;
     }
-    .intro-btn__passenger p{
-        font-size: 1.5rem;
+    .intro-btn__passenger p {
+      font-size: 1.5rem;
     }
-    .banner-phone{
-        display: block;
+    .banner-phone {
+      display: block;
     }
-}
+  }
+  
 
 
 .services__tabs{
@@ -809,7 +834,7 @@ textarea{
     max-width: 100px;
 }
 
-.services__tabs .tap  > p{
+.services__tabs .tab > p {
     margin-top: 1.5rem;
     font-size: 1.2rem;
 }
@@ -819,13 +844,13 @@ textarea{
 
 }
 
-.services__tabs .tap{
+.services__tabs .tab {
     opacity: 0.5;
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
 
-.services__taps .tap:hover{
+.services__tabs .tab:hover{
     opacity: 1;
 }
 
@@ -869,11 +894,11 @@ textarea{
 }
 
 @media screen and (min-width:1024px){
-    .services__taps .tap > p{
-        margin-top: 1.1rem;
+    .services__tabs .tab > p {
+        margin-top: 1rem;
         font-size: 1.4rem;
     }
-    .services__taps img {
+    .services__tabs img {
         width: 100%;
     }
     .services__title{
@@ -883,7 +908,7 @@ textarea{
     .services .feature__image{
         display: block;
     }
-    .feature__detail{
+    .services .feature__detail{
         width: 50%;
     }
     .services .feature__image {
@@ -899,7 +924,12 @@ textarea{
 }
 
 
+@media screen and (min-width: 768px) {
+    .block{
+        padding: 6rem 2rem;
+    }
+}
+
 .block-heading{
     margin-top: 6rem;
 }
-
