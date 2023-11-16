@@ -250,9 +250,9 @@ h2{
 }
 
 @media screen and (min-width: 1024px) {
-    /* .block-plan {
+    .block-plan {
       grid-template-columns: repeat(3, 1fr);
-    } */
+    }
     .plan .btn--block {
       font-size: 1.8rem;
     }
