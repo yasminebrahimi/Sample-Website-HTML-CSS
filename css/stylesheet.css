@@ -931,5 +931,25 @@ textarea{
 }
 
 .block-heading{
-    margin-top: 6rem;
+    margin-top: 1rem;
+}
+
+
+/* TRAVEL SECTION */
+.travell__slides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.travell__slide {
+    flex: 0 0 290px;
+}
+
+.travell__slide img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 27px;
 }
