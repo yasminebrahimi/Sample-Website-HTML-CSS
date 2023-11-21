@@ -936,20 +936,30 @@ textarea{
 
 
 /* TRAVEL SECTION */
-.travell__slides{
+
+
+.travell__slides {
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow-x: auto;
-}
-
-.travell__slide {
-    flex: 0 0 290px;
-}
-
-.travell__slide img {
-    width: 100px;
-    height: auto;
+    padding-bottom: 1rem;
+  }
+  .travell__slide {
+    flex: 0 0 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .travell__slide img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 27px;
-}
+    border-radius: 20px;
+  }
+
+  .slide__detail{
+    background-color: #fff;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 32px;
+  }
