@@ -950,6 +950,7 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 2rem;
   }
   .travell__slide img {
     width: 100%;
@@ -962,7 +963,7 @@ textarea{
     background-color: #fff;
     box-shadow:0 10px 30px rgba(0, 0, 0, 0.06);
     border-radius: 32px;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 2rem;
     transform: translateY(-55px);
     width: 80%;
   }
@@ -983,10 +984,18 @@ textarea{
     padding: 0.1rem 1.2rem;
   }
 
-
   .slide__detail .slide__title{
     font-size: 1.4rem;
     font-weight: 700;
     margin-top: 1rem;
 
   }
+
+  .slide__detail .slide__icons{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #cacaca;
+  }
+
