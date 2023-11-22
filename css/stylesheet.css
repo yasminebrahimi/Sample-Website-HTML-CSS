@@ -966,6 +966,11 @@ textarea{
     margin-left: 2rem;
   }
 
+.slide__img{
+    width: 100; 
+    height: 200px;
+}
+
   .travell__slide img {
     width: 100%;
     height: 100%;
