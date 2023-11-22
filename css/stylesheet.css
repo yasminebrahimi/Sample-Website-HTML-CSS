@@ -945,6 +945,15 @@ textarea{
     overflow-x: auto;
     padding-bottom: 1rem;
   }
+
+
+
+  .travell__slides::-webkit-scrollbar{
+    display: none;
+    width: 2px;
+  }
+
+
   .travell__slide {
     flex: 0 0 260px;
     display: flex;
@@ -952,6 +961,11 @@ textarea{
     align-items: center;
     margin-left: 2rem;
   }
+
+  .travell__slide:not(:last-child){
+    margin-left: 2rem;
+  }
+
   .travell__slide img {
     width: 100%;
     height: 100%;
@@ -965,7 +979,7 @@ textarea{
     border-radius: 32px;
     padding: 0.6rem 2rem;
     transform: translateY(-55px);
-    width: 80%;
+    width: 85%;
   }
 
   .slide__header{
