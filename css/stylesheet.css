@@ -1134,6 +1134,7 @@ textarea{
     justify-content: space-between;
     align-items: center;
     background-color: gold;
+    padding: 1rem;
   }
 
   .select-control input[type="radio"]{
@@ -1142,5 +1143,12 @@ textarea{
 
 .select-control{
     cursor: pointer;
+   /* margin-left: 2rem;*/
+    background-color: tomato;
+    flex-grow: 1;
 }
+
+
+
+
 
