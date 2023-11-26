@@ -1126,3 +1126,21 @@ textarea{
     display: inline-block;
   }
 
+
+  /*Selection type webinar section*/
+
+  .select-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gold;
+  }
+
+  .select-control input[type="radio"]{
+    display: none;
+  }
+
+.select-control{
+    cursor: pointer;
+}
+
