@@ -1153,8 +1153,21 @@ textarea{
     display: block;
     border-radius: 32px;
     border: 2px solid #ccc; 
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #444;
+    position: relative;
 }
 
+
+.select-control label ::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 0 2px;
+}
 
 
 
