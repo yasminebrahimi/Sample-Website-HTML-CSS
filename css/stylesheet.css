@@ -1149,6 +1149,7 @@ textarea{
 }
 
 .select-control label{
+    cursor: pointer;
     width: 100%;
     display: block;
     border-radius: 32px;
@@ -1158,7 +1159,7 @@ textarea{
     text-align: center;
     color: #444;
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-out;
 }
 
 
@@ -1174,6 +1175,8 @@ textarea{
     transform: translateY(-50%);
     border: 3px solid #fff;
     transition: all 0.3s ease-out;
+    border: 3px solid #fff;
+    transition: all 0.2s ease-out;
   }
 
 .select-control input[type="radio"]:checked + label {
@@ -1181,7 +1184,13 @@ textarea{
     color: var(--color-primary);
   }
 
+  .select-control input[type="radio"]:checked + label::before {
+    box-shadow: 0 0 0 2px var(--color-primary);
+    background-color: var(--color-primary);
+  }
   
+
+
   
 
 
