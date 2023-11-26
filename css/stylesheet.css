@@ -1158,17 +1158,31 @@ textarea{
     text-align: center;
     color: #444;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 
-.select-control label ::before{
+.select-control label::before {
     position: absolute;
     content: "";
     width: 15px;
     height: 15px;
-    box-shadow: 0 0 0 2px;
-}
+    box-shadow: 0 0 0 2px #ccc;
+    border-radius: 100%;
+    right: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid #fff;
+    transition: all 0.3s ease-out;
+  }
 
+.select-control input[type="radio"]:checked + label {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  
+  
 
 
 
