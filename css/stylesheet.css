@@ -1133,8 +1133,6 @@ textarea{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gold;
-    padding: 1rem;
   }
 
   .select-control input[type="radio"]{
@@ -1143,9 +1141,18 @@ textarea{
 
 .select-control{
     cursor: pointer;
-   /* margin-left: 2rem;*/
-    background-color: tomato;
     flex-grow: 1;
+}
+
+.select-type :not(:last-child){
+    margin-left: 2rem;
+}
+
+.select-control label{
+    width: 100%;
+    display: block;
+    border-radius: 32px;
+    border: 2px solid #ccc; 
 }
 
 
