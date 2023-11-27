@@ -1127,43 +1127,37 @@ textarea{
   }
 
 
-  /*Selection type webinar section*/
+ /* SELEECT TYPE WEBINAR SECTION */
 
-  .select-type{
+.select-type {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-  .select-control input[type="radio"]{
+  .select-control input[type="radio"] {
     display: none;
   }
-
-.select-control{
+  .select-control {
     cursor: pointer;
     flex-grow: 1;
-}
-
-.select-type :not(:last-child){
+  }
+  .select-type :not(:last-child) {
     margin-left: 2rem;
-}
-
-.select-control label{
+  }
+  .select-control label {
     cursor: pointer;
     width: 100%;
     display: block;
     border-radius: 32px;
-    border: 2px solid #ccc; 
+    border: 2px solid #ccc;
     padding: 1rem 2rem;
     font-weight: 700;
-    text-align: center;
     color: #444;
+    text-align: center;
     position: relative;
-    transition: all 0.2s ease-out;
-}
-
-
-.select-control label::before {
+    transition: all 0.3s ease-out;
+  }
+  .select-control label::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1175,23 +1169,15 @@ textarea{
     transform: translateY(-50%);
     border: 3px solid #fff;
     transition: all 0.3s ease-out;
-    border: 3px solid #fff;
-    transition: all 0.2s ease-out;
   }
-
-.select-control input[type="radio"]:checked + label {
+  
+  .select-control input[type="radio"]:checked + label {
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
   }
-
+  
   .select-control input[type="radio"]:checked + label::before {
     box-shadow: 0 0 0 2px var(--color-primary);
     background-color: var(--color-primary);
   }
   
-
-
-  
-
-
-
