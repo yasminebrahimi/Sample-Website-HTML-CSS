@@ -47,31 +47,32 @@
         </nav>
       </header>   
 <section class="hero-section">
-    <picture>
-      <source
+  <picture>
+    <source
       srcset="https://tapsi.ir/images/home/banner.webp"
-        type="image/webp"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="https://tapsi.ir/images/home/banner.jpg"
-        type="image/jpg"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="https://tapsi.ir/images/home/banner-mobile.webp"
-        type="image/webp"
-        media="(max-width: 768px)"
-      />
-      <source
-        srcset="https://tapsi.ir/images/home/banner-mobile.jpg"
-        type="image/jpg"
-        media="(max-width: 768px)"
-      />
-      <img
-        alt="banner"
-        src="https://tapsi.ir/images/home/banner.jpg"
-        class="banner-img"
+      type="image/webp"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="https://tapsi.ir/images/home/banner.jpg"
+      type="image/jpeg"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="https://tapsi.ir/images/home/banner-mobile.webp"
+      type="image/webp"
+      media="(max-width: 768px)"
+    />
+    <source
+      srcset="https://tapsi.ir/images/home/banner-mobile.jpg"
+      type="image/jpeg"
+      media="(max-width: 768px)"
+    />
+    <img
+      alt="banner"
+      src="https://tapsi.ir/images/home/banner.jpg"
+      class="banner-img"
+      loading="lazy"
       />
     </picture>
     <picture>
@@ -707,7 +708,7 @@
               </span>
             </div>
           </div>
-          <div class="contact-us__map">
+          <div class="contact-us__map"> 
             <img src="/assets/images/map.png" alt="" />
           </div>
           <div class="contact-us__form">
@@ -718,7 +719,6 @@
                 <input
                   type="email"
                   placeholder="ایمیل خود را وارد کنید"
-                  dir="ltr"
                 />
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <button type="submit" class="btn btn--primary">ثبت نظر</button>
